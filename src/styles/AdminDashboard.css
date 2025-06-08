@@ -1,0 +1,605 @@
+.admin-dashboard-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.admin-dashboard-header {
+  background: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-header-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.admin-dashboard-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-dashboard-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard-back-btn {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  color: #6b7280;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-back-btn:hover {
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+.admin-dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.admin-dashboard-tabs {
+  display: flex;
+  gap: 0.25rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.admin-dashboard-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-tab.active {
+  background: white;
+  color: #3b82f6;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-tab:not(.active) {
+  color: #6b7280;
+}
+
+.admin-dashboard-tab:not(.active):hover {
+  color: #1f2937;
+}
+
+.admin-dashboard-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.admin-dashboard-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard-stat-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.admin-dashboard-stat-content {
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard-stat-icon-wrapper {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.admin-dashboard-stat-icon-wrapper.blue {
+  background-color: #dbeafe;
+}
+
+.admin-dashboard-stat-icon-wrapper.green {
+  background-color: #dcfce7;
+}
+
+.admin-dashboard-stat-icon-wrapper.yellow {
+  background-color: #fef3c7;
+}
+
+.admin-dashboard-stat-icon-wrapper.purple {
+  background-color: #f3e8ff;
+}
+
+.admin-dashboard-stat-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.admin-dashboard-stat-icon.blue {
+  color: #3b82f6;
+}
+
+.admin-dashboard-stat-icon.green {
+  color: #22c55e;
+}
+
+.admin-dashboard-stat-icon.yellow {
+  color: #eab308;
+}
+
+.admin-dashboard-stat-icon.purple {
+  color: #a855f7;
+}
+
+.admin-dashboard-stat-details p {
+  margin: 0;
+}
+
+.admin-dashboard-stat-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.admin-dashboard-stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.admin-dashboard-activity-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.admin-dashboard-activity-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.admin-dashboard-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-dashboard-activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+}
+
+.admin-dashboard-activity-info h4 {
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0 0 0.25rem 0;
+}
+
+.admin-dashboard-activity-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.admin-dashboard-activity-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.admin-dashboard-complaints-filters {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard-filters-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-dashboard-search-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.admin-dashboard-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.admin-dashboard-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-search-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #3b82f6;
+  border-color: transparent;
+}
+
+.admin-dashboard-status-select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-status-select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #3b82f6;
+  border-color: transparent;
+}
+
+.admin-dashboard-complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-dashboard-complaint-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.admin-dashboard-complaint-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.admin-dashboard-complaint-title-section {
+  flex: 1;
+}
+
+.admin-dashboard-complaint-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-dashboard-complaint-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.admin-dashboard-complaint-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.admin-dashboard-complaint-status.pending {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.admin-dashboard-complaint-status.in-progress {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.admin-dashboard-complaint-status.resolved {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.admin-dashboard-complaint-status.rejected {
+  background-color: #fecaca;
+  color: #dc2626;
+}
+
+.admin-dashboard-complaint-description {
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.admin-dashboard-complaint-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.admin-dashboard-complaint-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.admin-dashboard-complaint-action-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-complaint-action-btn.view {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.admin-dashboard-complaint-action-btn.view:hover {
+  background-color: #2563eb;
+}
+
+.admin-dashboard-complaint-action-btn.accept {
+  background-color: #22c55e;
+  color: white;
+}
+
+.admin-dashboard-complaint-action-btn.accept:hover {
+  background-color: #16a34a;
+}
+
+.admin-dashboard-complaint-action-btn.reject {
+  background-color: #ef4444;
+  color: white;
+}
+
+.admin-dashboard-complaint-action-btn.reject:hover {
+  background-color: #dc2626;
+}
+
+.admin-dashboard-complaint-action-btn.resolve {
+  background-color: #a855f7;
+  color: white;
+}
+
+.admin-dashboard-complaint-action-btn.resolve:hover {
+  background-color: #9333ea;
+}
+
+.admin-dashboard-complaint-action-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.admin-dashboard-users-table {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.admin-dashboard-users-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard-table thead tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-dashboard-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.admin-dashboard-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.admin-dashboard-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.admin-dashboard-table td {
+  padding: 0.75rem 1rem;
+}
+
+.admin-dashboard-user-status {
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.admin-dashboard-user-status.active {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.admin-dashboard-user-status.inactive {
+  background-color: #fecaca;
+  color: #dc2626;
+}
+
+.admin-dashboard-table-action {
+  color: #3b82f6;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  transition: color 0.2s;
+}
+
+.admin-dashboard-table-action:hover {
+  color: #1d4ed8;
+}
+
+.admin-dashboard-table-action.danger {
+  color: #dc2626;
+}
+
+.admin-dashboard-table-action.danger:hover {
+  color: #b91c1c;
+}
+
+.admin-dashboard-products-grid {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.admin-dashboard-products-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.admin-dashboard-products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.admin-dashboard-product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.admin-dashboard-product-image {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.admin-dashboard-product-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+.admin-dashboard-product-price {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem 0;
+}
+
+.admin-dashboard-product-seller {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin: 0 0 0.75rem 0;
+}
+
+.admin-dashboard-product-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-dashboard-product-action-btn {
+  flex: 1;
+  font-size: 0.75rem;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-dashboard-product-action-btn.view {
+  background-color: #3b82f6;
+}
+
+.admin-dashboard-product-action-btn.view:hover {
+  background-color: #2563eb;
+}
+
+.admin-dashboard-product-action-btn.remove {
+  background-color: #ef4444;
+}
+
+.admin-dashboard-product-action-btn.remove:hover {
+  background-color: #dc2626;
+}
+
+.admin-dashboard-loading {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-dashboard-spinner {
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  border-bottom: 2px solid #3b82f6;
+}
+
+@media (min-width: 640px) {
+  .admin-dashboard-filters-content {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .admin-dashboard-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .admin-dashboard-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

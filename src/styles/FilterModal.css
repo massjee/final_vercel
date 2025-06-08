@@ -1,0 +1,238 @@
+.filter-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.filter-modal {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-modal-title-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #22c55e;
+}
+
+.filter-modal-title h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.filter-modal-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.2s;
+}
+
+.filter-modal-close:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.filter-modal-close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.filter-modal-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.filter-label-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #6b7280;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.filter-input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #22c55e;
+  border-color: transparent;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background: white;
+  transition: all 0.2s;
+}
+
+.filter-select:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #22c55e;
+  border-color: transparent;
+}
+
+.filter-price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-price-separator {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.filter-checkbox-label:hover {
+  background-color: #f9fafb;
+}
+
+.filter-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #22c55e;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.filter-checkbox:focus {
+  ring: 2px;
+  ring-color: #22c55e;
+}
+
+.filter-modal-footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn-reset {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.filter-btn-reset:hover {
+  background-color: #e5e7eb;
+}
+
+.filter-btn-apply {
+  background-color: #22c55e;
+  color: white;
+}
+
+.filter-btn-apply:hover {
+  background-color: #16a34a;
+}
+
+@media (max-width: 640px) {
+  .filter-modal {
+    margin: 0;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+
+  .filter-modal-content {
+    padding: 1rem;
+  }
+
+  .filter-modal-header {
+    padding: 1rem;
+  }
+
+  .filter-modal-footer {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .filter-price-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-price-separator {
+    text-align: center;
+  }
+}

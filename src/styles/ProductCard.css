@@ -1,0 +1,235 @@
+.product-card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:active {
+  transform: scale(0.98);
+}
+
+.product-card-image-container {
+  position: relative;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.product-card-auction-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #dc2626;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.product-card-auction-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+.product-card-eco-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.product-card-eco-badge.excellent {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.product-card-eco-badge.good {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.product-card-eco-badge.fair {
+  background-color: #fed7aa;
+  color: #ea580c;
+}
+
+.product-card-favorite-btn {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-card-favorite-btn:hover {
+  background-color: #f9fafb;
+}
+
+.product-card-favorite-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #6b7280;
+}
+
+.product-card-content {
+  padding: 1rem;
+}
+
+.product-card-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card-price-section {
+  margin-bottom: 0.75rem;
+}
+
+.product-card-auction-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.product-card-current-bid {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.product-card-bid-count {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.product-card-time-remaining {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin-top: 0.25rem;
+}
+
+.product-card-time-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.product-card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.product-card-seller-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.product-card-seller {
+  display: flex;
+  align-items: center;
+}
+
+.product-card-seller-avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.product-card-rating {
+  display: flex;
+  align-items: center;
+}
+
+.product-card-rating-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #eab308;
+  margin-right: 0.25rem;
+}
+
+.product-card-location {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.product-card-location-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+
+.product-card-condition {
+  margin-top: 0.5rem;
+}
+
+.product-card-condition-badge {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .product-card-content {
+    padding: 0.75rem;
+  }
+
+  .product-card-title {
+    font-size: 0.875rem;
+  }
+
+  .product-card-description {
+    font-size: 0.75rem;
+  }
+}
